@@ -18,7 +18,8 @@ body {
     box-shadow: 0 10px 30px rgb(0 0 0 / 15%), 0 1px 4px rgb(0 0 0 / 15%), 0 1px 0 rgb(0 0 0 / 7%);
     text-decoration: none;
     color: #ADB5BD;
-    z-index: 1;
+    z-index: 100;
+    background: #212529;
 }
 .back:hover {
     background: #16191c;
@@ -32,12 +33,12 @@ body {
     scroll-snap-type: y mandatory;
 }
 .section {
-    font-size: 3em;
+/*    font-size: 3em;*/
     color: #ADB5BD;
-    width: 100%;
-    background-size:  cover;
-    scroll-snap-align: start;
-    /*position: relative;*/
+/*    width: 100%;*/
+/*    background-size:  cover;*/
+/*    scroll-snap-align: start;*/
+/*    !*position: relative;*!*/
 }
 .section .project::after {
     content: '';
@@ -62,7 +63,7 @@ body {
     color: #495057;
 }
 .section .project {
-    padding: 2em 3em;
+    padding: 2em 1em 2em 3em;
     position: relative;
 }
 .section .project > div {
@@ -81,23 +82,18 @@ body {
 }
 .section .project .description {
     font-size: 0.5em;
-    /*color: #1c1c1c;*/
 }
 .section .project .role {
     font-size: 0.7em;
-    /*color: #313131;*/
 }
 .section .project .team {
     font-size: 0.5em;
-    /*color: #424242;*/
 }
 .section .project .task {
     font-size: 0.4em;
-    /*color: #444444;*/
 }
 .section .project .technology {
     font-size: 0.4em;
-    /*color: #444444;*/
 }
 .section .project > div > div:first-child {
     margin-left: -1em;
