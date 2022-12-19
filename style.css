@@ -28,6 +28,14 @@ a {
     font-size: 2em;
 }
 
+.pronunciation {
+    cursor: pointer;
+}
+
+.pronunciation:hover {
+    color: #6C757D;
+}
+
 .navigation {
     display: flex;
     justify-content: center;
