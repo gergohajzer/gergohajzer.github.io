@@ -1,0 +1,155 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #212529;
+    color: #ADB5BD;
+}
+
+.main-title {
+    font-size: 1em;
+    margin-top: 8em;
+    text-align: center;
+}
+
+.back {
+    position: absolute;
+    top: 1em;
+    right: 1.2em;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    object-fit: cover;
+    text-align: center;
+    display: block;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 15%), 0 1px 4px rgb(0 0 0 / 15%), 0 1px 0 rgb(0 0 0 / 7%);
+    text-decoration: none;
+    color: #ADB5BD;
+    z-index: 100;
+    background: #212529;
+}
+
+.back:hover {
+    background: #16191c;
+}
+
+.timeline {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+
+.section {
+    font-size: 3em;
+}
+
+.section .project::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #343A40;
+    top: 2.5em;
+    bottom: 2.5em;
+    left: 1.4em;
+    margin-left: -3px;
+}
+
+.section .to {
+    position: absolute;
+    left: 20px;
+    top: 0.5em;
+    color: #495057;
+}
+
+.section .from {
+    position: absolute;
+    left: 20px;
+    bottom: 0.5em;
+    color: #495057;
+}
+
+.section .project {
+    padding: 2em 1em 2em 3em;
+    position: relative;
+}
+
+.section .project > div {
+    margin-top: 0.4em;
+}
+
+.section .project .title{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    object-fit: cover;
+    text-align: center;
+    display: block;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 15%), 0 1px 4px rgb(0 0 0 / 15%), 0 1px 0 rgb(0 0 0 / 7%);
+    color: #ADB5BD;
+}
+
+.section .project .description {
+    font-size: 0.5em;
+}
+
+.section .project .role {
+    font-size: 0.7em;
+}
+
+.section .project .team {
+    font-size: 0.5em;
+}
+
+.section .project .task {
+    font-size: 0.4em;
+}
+
+.section .project .technology {
+    font-size: 0.4em;
+}
+
+.section .project > div > div:first-child {
+    margin-left: -1em;
+    font-size: 1rem;
+    color: #6C757D;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 320px) {
+    .section{
+        font-size: 1.5rem;
+    }
+    .section .project .title{
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+    .section{
+        font-size: 2rem;
+    }
+    .section .project .title{
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .section{
+        font-size: 3rem;
+    }
+    .section logo{
+        width: 100px;
+        height: 100px;
+    }
+}
